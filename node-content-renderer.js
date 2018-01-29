@@ -174,7 +174,7 @@ class FileThemeNodeContentRenderer extends Component {
                         key={index} // eslint-disable-line react/no-array-index-key
                         className={styles.toolbarButton}
                       >
-                        {btn}
+                        {btn} TESTING
                       </div>
                     ))}
                   </div>
