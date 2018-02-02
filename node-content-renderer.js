@@ -165,6 +165,7 @@ class FileThemeNodeContentRenderer extends Component {
                             treeIndex,
                           })
                         : nodeTitle}
+                        row label
                     </span>
                   </div>
 
