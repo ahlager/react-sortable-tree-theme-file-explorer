@@ -115,9 +115,7 @@ class FileThemeNodeContentRenderer extends Component {
           )}
 
         <div
-          className={
-            styles.rowWrapper +
-            (!canDrag ? ` ${styles.rowWrapperDragDisabled}` : '')
+          className={ 
           }
         >
           {/* Set the row preview to be used during drag and drop */}
@@ -125,28 +123,16 @@ class FileThemeNodeContentRenderer extends Component {
             <div style={{ display: 'flex' }}>
               {scaffold}
               <div
-                className={
-                  styles.row +
-                  (isLandingPadActive ? ` ${styles.rowLandingPad}` : '') +
-                  (isLandingPadActive && !canDrop
-                    ? ` ${styles.rowCancelPad}`
-                    : '') +
-                  (isSearchMatch ? ` ${styles.rowSearchMatch}` : '') +
-                  (isSearchFocus ? ` ${styles.rowSearchFocus}` : '') +
-                  (className ? ` ${className}` : '')
-                }
+                className={ }
                 style={{
                   opacity: isDraggedDescendant ? 0.5 : 1,
                   ...style,
                 }}
               >
                 <div
-                  className={
-                    styles.rowContents +
-                    (!canDrag ? ` ${styles.rowContentsDragDisabled}` : '')
-                  }
+                  className={ }
                 >
-                  <div className={styles.rowToolbar}>
+                  <div className={}>
                     {icons.map((icon, index) => (
                       <div
                         key={index} // eslint-disable-line react/no-array-index-key
@@ -156,7 +142,7 @@ class FileThemeNodeContentRenderer extends Component {
                       </div>
                     ))}
                   </div>
-                  <div className={styles.rowLabel}>
+                  <div className={}>
                     <span className={styles.rowTitle}>
                       {typeof nodeTitle === 'function'
                         ? nodeTitle({
@@ -169,11 +155,11 @@ class FileThemeNodeContentRenderer extends Component {
                     </span>
                   </div>
 
-                  <div className={styles.rowToolbar}>
+                  <div className={}>
                     {buttons.map((btn, index) => (
                       <div
                         key={index} // eslint-disable-line react/no-array-index-key
-                        className={styles.toolbarButton}
+                        className={}
                       >
                         {btn} 
                       </div>
